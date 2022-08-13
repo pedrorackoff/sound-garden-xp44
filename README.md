@@ -1,6 +1,6 @@
 # Sound Garden XP44
-Segundo projeto Hands On da Gama Academy
-# Colocando em prática seus conhecimentos de Javascript e
+# Segundo projeto Hands On da Gama Academy
+Colocando em prática seus conhecimentos de Javascript
 HTML criando um site com conteúdo dinâmico e consumo de API.
 
 <img src="exemplo-image.png" alt="exemplo imagem">
