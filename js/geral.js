@@ -52,9 +52,32 @@ const resposta = fetch(SOUND_URL, {
 console.log(resposta)
 });
 
-
-
-
-
-
-
+async function getEvent() {
+    const url = 'https://xp41-soundgarden-api.herokuapp.com/events';
+    const data = fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    })
+    .then((response) => response.json())
+    .then((data) => {
+        data.map(value => {
+                let tableBody = '';
+                tableBody += `<tr>`;
+                tableBody += `<th>${value._id}</th>`;
+                tableBody += `<td>${value.scheduled}</td>`;
+                tableBody += `<td>${value.name}</td>`;
+                tableBody += `<td>${value.attractions.join(',')}</td>`;
+                tableBody += `<td>`;
+                    tableBody += `<a href="reservas.html?id=${value._id}" class="btn btn-dark reserva">ver reservas</a>`;
+                    tableBody += `<a href="editar-evento.html?id=${value._id}" class="btn btn-secondary edita">editar</a>`;
+                    tableBody += `<a href="excluir-evento.html?id=${value._id}" class="btn btn-danger exclui">excluir</a>`;
+                tableBody += `</td>`;
+                tableBody += `</tr>`;
+                let tableRow = document.getElementById('tableBody').insertRow(0);
+                tableRow.innerHTML = tableBody;
+        });
+    });
+}
