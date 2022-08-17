@@ -28,7 +28,7 @@ const inputLotacao = document.getElementById("lotacao");
 const inputBanner = document.getElementById("banner");
 
 inputNome.value = dadosEvento.name;
-inputAtracoes.value = dadosEvento.attractions.join(', ');
+inputAtracoes.value = dadosEvento.attractions.join(',');
 inputDescricao.value = dadosEvento.description;
 inputBanner.value = dadosEvento.poster;
 inputData.value = dadosEvento.scheduled;
