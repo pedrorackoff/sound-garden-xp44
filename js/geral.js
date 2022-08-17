@@ -40,7 +40,14 @@ const resposta = fetch(SOUND_URL, {
     return Response.json()
 }).then((ResponseOBJ) => {
     console.log(ResponseOBJ)
-});
+}).then(() => {
+    alert('Evento Criado com Sucesso!');
+    window.location.href = './admin.html';
+  })
+  .catch(err => {
+    alert('Cadastro não efetuado!')
+    console.log(err);
+  });
 
 console.log(resposta)
 });
