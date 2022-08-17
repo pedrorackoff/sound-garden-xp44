@@ -38,3 +38,40 @@ inputLotacao.value = dadosEvento.number_tickets;
 }
 
 exibirDetalhesEvento();
+
+const editEvento = document.querySelector('#editar-evento');
+
+editEvento.addEventListener('submit', async (event) => {
+
+    let nomeForm = document.getElementById('nome').value;
+    let bannerForm = document.getElementById('banner').value;
+    let atracaoForm = document.getElementById('atracoes').value;
+    let descricaoForm = document.getElementById('descricao').value;
+    let dataForm = document.getElementById('data').value;
+    let lotacaoForm = document.getElementById('lotacao').value;
+
+    event.preventDefault();
+
+    const data = {
+        'name' : nomeForm,
+        'poster' : bannerForm,
+        'attractions' : atracaoForm.split(','),
+        'description' : descricaoForm,
+        'scheduled' : dataForm,
+        'number_tickets' : lotacaoForm
+    }
+
+    const resposta = await fetch('https://xp41-soundgarden-api.herokuapp.com/events/' + findID(), {
+        method: "PUT",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }).then(response => response)
+    .then(result => { window.location.href = './admin.html'})
+    .catch(error => alert(`O evento ${nome} não foi editado!`))
+    
+
+    alert("Evento editado com sucesso!")
+})
