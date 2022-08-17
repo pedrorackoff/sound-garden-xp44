@@ -6,13 +6,6 @@ const inputData = document.getElementById("data");
 const inputLotacao = document.getElementById("lotacao");
 const inputBanner = document.getElementById("banner");
 
-inputNome.value = dadosEvento.name;
-inputAtracoes.value = dadosEvento.attractions.join(', ');
-inputDescricao.value = dadosEvento.description;
-inputBanner.value = dadosEvento.poster;
-inputData.value = dadosEvento.scheduled;
-inputLotacao.value = dadosEvento.number_tickets;
-
 const findID = () => {
 
     const url = new URL(window.location.href);
@@ -37,7 +30,7 @@ const detailsEvent = async () => {
 
 detailsEvent()
 
-
+const deleteEvento = document.querySelector('#excluir-evento')
 
 deleteEvento.addEventListener('submit', async (event) => {
 
