@@ -1,5 +1,3 @@
-
-
 const findID = () => {
 
     const url = new URL(window.location.href);
