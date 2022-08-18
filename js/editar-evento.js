@@ -69,7 +69,7 @@ editEvento.addEventListener('submit', async (event) => {
         },
         body: JSON.stringify(data)
     }).then(response => response)
-    .then(result => { window.location.href = './admin.html'})
+    .then(result => { window.location.href = 'admin.html'})
     .catch(error => alert(`O evento ${nome} não foi editado!`))
     
 
