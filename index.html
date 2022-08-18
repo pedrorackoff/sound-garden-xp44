@@ -16,11 +16,45 @@
         <img src="img/Sound-logo (1).png" width="300" alt="">
     </header>
     <main>
-        <section class="full d-flex justify-content-center align-items-center"
-            style="background-color: #F8BBD0; color: #fff">
-            <div class="text-center">
-                <h1>Adicione um banner maneiro aqui</h1>
-            </div>
+        <section class="full d-flex justify-content-center align-items-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <a href="eventos.html"><img src="./img/plateia-3.jpg" class="img-fluid hover-zoom" alt=""></a>    
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Conheça nossos eventos</h1>
+                          <h3>Temos o evento certo pra você!</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="cadastro-evento.html"><img src="./img/balada.png" alt=""></a>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Organizadores</h1>
+                          <h3>Façam seus eventos aqui!</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="admin.html"><img src="./img/j16.jpg" alt=""></a>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>Administrativo</h1>
+                          <h3>Controle de eventos</h3>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only"></span>
+                </a>
+              </div>
         </section>
         <section class="full">
             <div class="container text-center">
@@ -70,10 +104,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="eventos.html">eventos</a>
+                        <a href="eventos.html" class="card-link btn btn-primary">eventos</a>
                     </li>
                     <li>
-                        <a href="admin.html">painel administrativo</a>
+                        <a href="admin.html" class="card-link btn btn-primary">painel administrativo</a>
                     </li>
                 </ul>
             </nav>
@@ -144,6 +178,10 @@
     modal.find('.modal-body #atracoes').val(atracoesEvento);
     modal.find('.modal-body #data').val(dataEvento);
     modal.find('.modal-body #id').val(idEvento);
+    })
+
+    $('.carousel').carousel({
+    interval: 3000
     })
 </script>
 </html>

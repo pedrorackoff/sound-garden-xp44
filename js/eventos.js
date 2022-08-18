@@ -24,8 +24,7 @@ const listarEventos= async () => {
         <button type="button" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal"
         data-whatever="${evento.name}" data-whatever2="${evento.attractions}" data-whatever3="${evento.scheduled}"
         data-whatever4="${evento._id}">reservar ingressos</button>
-        </article>
-        `
+        </article>`
     });
     todosEventos.innerHTML = cards;
 }

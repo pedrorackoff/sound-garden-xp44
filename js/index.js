@@ -17,8 +17,8 @@ const exibirEventos = async () => {
         <button type="button" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal"
         data-whatever="${event.name}" data-whatever2="${event.attractions}" data-whatever3="${event.scheduled}"
         data-whatever4="${event._id}">reservar ingressos</button>
-        </article>
-        `
+        </article>`
+        
 });
 
    cardEvent.innerHTML = htmlEventos
