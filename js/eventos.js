@@ -61,5 +61,6 @@ async function addBooking(event) {
     })
 }
 
+
 const btnSubmit = document.getElementById('submit');
 btnSubmit.onclick = (evento) => addBooking(evento);

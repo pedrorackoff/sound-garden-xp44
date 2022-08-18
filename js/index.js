@@ -14,7 +14,9 @@ const exibirEventos = async () => {
         <h2>${event.name} - ${event.scheduled}</h2>
         <h4>${event.attractions}</h4>
         <p>${event.description}</p>
-        <a href="#" onclick="iniciaModal('.reserva-modal')" class="btn btn-primary">reservar ingresso</a>
+        <button type="button" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+        data-whatever="${event.name}" data-whatever2="${event.attractions}" data-whatever3="${event.scheduled}"
+        data-whatever4="${event._id}">reservar ingressos</button>
         </article>
         `
 });
@@ -23,3 +25,36 @@ const exibirEventos = async () => {
 };
 
 exibirEventos()
+
+async function addBooking(event) {
+    event.preventDefault();
+    let owner = document.querySelector('#nomeComprador').value;
+    let email = document.querySelector('#email').value;
+    let ticket = document.querySelector('#lotacao').value;
+    let idIngresso = document.querySelector('#id').value;
+
+    const data = {
+        'owner_name': owner,
+        'owner_email': email,
+        'number_tickets': ticket,
+        'event_id': idIngresso
+    }
+    const url = 'https://xp41-soundgarden-api.herokuapp.com/bookings';
+    const response = await fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(() => {
+        alert('Reserva feita com Sucesso!');
+        window.location.href = 'index.html'
+    }).catch(err => {
+        console.log(err);
+    })
+}
+
+
+const btnSubmit = document.getElementById('submit');
+btnSubmit.onclick = (evento) => addBooking(evento);
