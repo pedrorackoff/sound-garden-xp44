@@ -1,111 +1,144 @@
-# Sound Garden XP44
-# Segundo projeto Hands On da Gama Academy
-Colocando em prática seus conhecimentos de Javascript
-HTML criando um site com conteúdo dinâmico e consumo de API.
+<a id='ancora'></a>
+# Projeto Sound Garden - Gama Academy - XP 44 🚀
 
-<img src="exemplo-image.png" alt="exemplo imagem">
 
-> Uma casa de show chamada Sound Garden será
-inaugurada e precisa de um site que exiba os eventos e
-permita que os clientes reservem ingressos através da
-Landing Page.
+- [Sobre a Gama Academy](#ancora1) <br>
+- [Sobre o Gama Experience](#ancora2) <br>
+- [Sobre o Projeto](#ancora3) <br>
+- [Competências Desenvolvidas](#ancora4) <br>
+- [Entregável](#ancora5) <br>
+- [Entregável (Opcionais)](#ancora6) <br>
+- [Execução](#ancora7) <br>
+- [Prints de Execução](#ancora8) <br>
+- [Colaboradores](#ancora9)
 
-### Ajustes e melhorias
+<br><br>
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- Painel de Controle:
+<a id="ancora1"></a>
+## Sobre a Gama Academy 🏫
+<br>
+Empresa de educação que prepara talentos para o mercado digital. Em seus programas educacionais, as pessoas participantes enfrentam desafios reais, se conectam com empresas digitais, recebem mentorias de profissionais que estão mandando bem em suas áreas e, ainda têm a oportunidade de ensinar e aprender com a nossa comunidade visando o emprego, transição de carreira e o life long learning.
 
-[ ] 1. Criar Evento: receba os dados que o usuário inserir
-através do formulário da página criar-evento.html e
-envie essa informação para a API utilizando o
-método POST.
+<br>
 
-[ ] 2. Editar Evento: para cada evento listado, existe um
-botão editar que deve direcionar para
-editar-evento.html?id=0, com o id do evento
-selecionado. Na página de edição, o formulário deve
-aparecer preenchido com os dados do evento,
-permitindo a edição das informações.
+<a id="ancora2"></a>
+## Sobre o Gama Experience 👨🏽‍💻
 
-[ ] 3. Excluir Evento: para cada evento listado, existe um
-botão editar que deve direcionar para
-excluir-evento.html?id=0, com o id do evento
-selecionado. Na página de edição, o formulário deve
-aparecer preenchido com os dados do evento,
-porém com os campos desabilitados. Ao clicar no
-botão "excluir para sempre", deve fazer uma
-requisição na API para excluir o evento do banco de
-dados.
+<br>
 
-[ ] 4. Ver reservas do evento: Listar as reservas de
-ingressos do evento selecionado.
+É um curso com duração de 6 meses, com o objetivo de formar os melhores juniores do mercado, nas áreas de Desenvolvimento Web e Designers UX/UI! A primeira versão do curso foi lançada pela Gama Academy em 2016 e já empregou mais de 3.000 pessoas.  A versão atual contém mais de 810 horas de aulas, desafios e mentorias, com foco na  empregabilidade de nossos estudantes!
 
-## 💻 Pré-requisitos
+<br>
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+<a id="ancora3"></a>
+## Sobre o Projeto ✔️
 
-## 🚀 Instalando <nome_do_projeto>
+<br>
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Uma casa de show chamada Sound Garden será inaugurada e precisa de um site que exiba os eventos e permita que os clientes reservem ingressos através da Landing Page.
 
-Linux e macOS:
+<br>
+
+<a id="ancora4"></a>
+## Competências Desenvolvidas 📝
+
+<br>
+
+* HTML;
+* CSS;
+* JavaScript;
+* Bootstrap;
+* Manipulação de DOM;
+* Consumo de API; [SoundGarden API](https://documenter.getpostman.com/view/3028053/UVsTp2LC)
+* Conceito de CRUD (Create, Read, Update e Delete).
+
+<br>
+
+<a id="ancora5"></a>
+## Entregável 📋
+
+<br>
+
+1. Criar Evento: receba os dados que o usuário inserir através do formulário da página criar-evento.html e envie essa informação para a API utilizando o método POST. ✔️
+<br><br>
+2. Editar Evento: para cada evento listado, existe um botão editar que deve direcionar para editar-evento.html?id=0, com o id do evento selecionado. Na página de edição, o formulário deve aparecer preenchido com os dados do evento, permitindo a edição das informações utilizando o método PUT. ✔️
+<br><br>
+3. Excluir Evento: para cada evento listado, existe um botão editar que deve direcionar para excluir-evento.html?id=0, com o id do evento selecionado. Na página de edição, o formulário deve aparecer preenchido com os dados do evento, porém com os campos desabilitados. Ao clicar no botão "excluir para sempre", deve fazer uma requisição na API para excluir o evento do banco de dados. ✔️
+<br><br>
+4. Ver reservas do evento: Listar as reservas de ingressos do evento selecionado. ✔️
+
+<br>
+
+<a id="ancora6"></a>
+## Entregável (Opcionais)
+
+<br>
+
+5. Criar um banner rotativo para a primeira seção da landing page. Esse banner deverá exibir alguns eventos de destaque para os usuários. ✔️
+<br><br>
+6. Reserva de ingresso: ao clicar em "reservar ingresso", deve abrir um modal com formulário (nome e email), para que o usuário possa preencher os dados e reservar o ingresso. ✔️
+
+<br>
+
+<a id="ancora7"></a>
+## Execução 💻
+
+<br>
+
+Clone este repositório remoto em seu equipamento:
 ```
-<comando_de_instalação>
+git clone git@github.com:pedrorackoff/sound-garden-xp44.git
+```
+Ou utilize o GitHub Pages para visualizar a página:
+```
+https://pedrorackoff.github.io/sound-garden-xp44/index.html
 ```
 
-Windows:
-```
-<comando_de_instalação>
-```
+<br>
 
-## ☕ Usando <nome_do_projeto>
+<a id="ancora8"></a>
+## Prints de execução 📷
 
-Para usar <nome_do_projeto>, siga estas etapas:
+<br>
 
-```
-<exemplo_de_uso>
-```
+<center><img src="./img/print1.png"></center>
 
+<br>
+
+<center><img src="./img/print2.png"></center>
+
+<br>
+
+<center><img src="./img/print3.png"></center>
+
+<br><br>
+
+<a id="ancora9"></a>
 ## 🤝 Colaboradores
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+Projeto desenvolvido por:
 
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://www.linkedin.com/in/pedro-rackoff/">
+        <img src="https://avatars.githubusercontent.com/u/108676507?v=4" width="100px;" alt=""/><br>
         <sub>
-          <b>Iuri Silva</b>
+          <b>Pedro Rackoff</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+      <a href="https://www.linkedin.com/in/eduardo-alexandre025/">
+        <img src="https://avatars.githubusercontent.com/u/95940707?s=96&v=4" width="100px;" alt=""/><br>
         <sub>
-          <b>Mark Zuckerberg</b>
+          <b>Eduardo Alexandre</b>
         </sub>
       </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
 
-## 📝 Licença
+<br><br>
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
+[Voltar ao Topo](#ancora)
