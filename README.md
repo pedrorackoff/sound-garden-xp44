@@ -1,6 +1,7 @@
 <a id='ancora'></a>
 # Projeto Sound Garden - Gama Academy - XP 44 🚀
 
+<br><br>
 
 - [Sobre a Gama Academy](#ancora1) <br>
 - [Sobre o Gama Experience](#ancora2) <br>
@@ -17,7 +18,9 @@
 
 <a id="ancora1"></a>
 ## Sobre a Gama Academy 🏫
+
 <br>
+
 Empresa de educação que prepara talentos para o mercado digital. Em seus programas educacionais, as pessoas participantes enfrentam desafios reais, se conectam com empresas digitais, recebem mentorias de profissionais que estão mandando bem em suas áreas e, ainda têm a oportunidade de ensinar e aprender com a nossa comunidade visando o emprego, transição de carreira e o life long learning.
 
 <br>
