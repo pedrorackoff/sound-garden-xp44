@@ -15,7 +15,7 @@ const listarEventos= async () => {
     const tbody = document.querySelector(".lista-eventos tbody");
     
     let htmlEventos = "";
-
+    //Monta a tabela da página
     eventos.forEach(evento => {
         htmlEventos += `
         <tr>

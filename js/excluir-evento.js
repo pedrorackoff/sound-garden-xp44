@@ -6,6 +6,7 @@ const inputData = document.getElementById("data");
 const inputLotacao = document.getElementById("lotacao");
 const inputBanner = document.getElementById("banner");
 
+//Encontra o id passado na url
 const findID = () => {
 
     const url = new URL(window.location.href);

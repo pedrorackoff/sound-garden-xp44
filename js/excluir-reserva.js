@@ -1,3 +1,4 @@
+//Encontra o id passado na url
 const findID = () => {
 
     const url = new URL(window.location.href);

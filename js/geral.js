@@ -27,7 +27,7 @@ const novoEventoObj = {
 //alert(inputNome.value);
 
 const novoEventoJSON = JSON.stringify(novoEventoObj);
-
+//Cadastra o evento
 const resposta = fetch(SOUND_URL, {
     method: "POST",
     mode: "cors",

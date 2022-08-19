@@ -14,18 +14,19 @@ const listarEventos= async () => {
     const todosEventos = document.querySelector('#eventos');
     
     let cards = '';
-
+    //Constroi os cards da página
     eventos.forEach(evento => {
         cards += `
         <article class="evento maxw card p-5 m-3">
         <h2>${evento.name} - ${evento.scheduled}</h2>
         <h4>${evento.attractions}</h4>
         <p>${evento.description}</p>
-        <button type="button" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+        <button type="button" class="card-link btn btn-primary" data-toggle="modal" data-target="#exampleModal" 
         data-whatever="${evento.name}" data-whatever2="${evento.attractions}" data-whatever3="${evento.scheduled}"
         data-whatever4="${evento._id}">reservar ingressos</button>
         </article>`
     });
+    //Interação com o modal do bootstrap, cada "data-whatever" passa para o modal uma informação para ser coletada
     todosEventos.innerHTML = cards;
 }
 

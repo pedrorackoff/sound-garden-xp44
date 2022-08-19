@@ -22,6 +22,7 @@
             <div class="container text-center">
                 <h2>Todos os Eventos</h2>
             </div>
+            <!--Eventos adicionados com .js-->
             <div id="eventos" class="container d-flex justify-content-center align-items-center flex-wrap"></div>
         </section>
         <section class="full d-flex justify-content-center align-items-center"
@@ -72,6 +73,7 @@
             </nav>
         </div>
     </footer>
+    <!--Adiciona modal dapágina com bootstrap-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -124,6 +126,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 <script>
+    /*Script do bootstrap*/
     $('#exampleModal').on('show.bs.modal', function (event) {
     let button = $(event.relatedTarget) // Botão que acionou o modal
     let nomeEvento = button.data('whatever');

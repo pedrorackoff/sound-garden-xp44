@@ -20,7 +20,7 @@ const exibirEventos = async () => {
         </article>`
         
 });
-
+    //Interação com o modal do bootstrap, cada "data-whatever" passa para o modal uma informação para ser coletada
    cardEvent.innerHTML = htmlEventos
 };
 

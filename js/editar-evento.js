@@ -1,3 +1,4 @@
+//Encontra o id passado na url
 const findID = () => {
 
     const url = new URL(window.location.href);
@@ -6,7 +7,7 @@ const findID = () => {
     return id;
 
 }
-
+//Preenche os campos com os dados da API
 const exibirDetalhesEvento = async () => {
     const dadosEvento = await fetch ('https://xp41-soundgarden-api.herokuapp.com/events/' + findID(), {
     method: "GET",
